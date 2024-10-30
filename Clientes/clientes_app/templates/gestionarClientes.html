@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestion Clientes{% endblock %}
+
+{% block  cuerpo %}
+    <h1>Gestionar Clientes Ernesto Larrondo</h1>
+
+    {% for m in losclientes %}
+    <li> {{m.Id_cliente}} --- {{m.nombre}} --- {{m.num_celular}} --- {{m.direccion}} --- {{m.correo}}</li>
+    {% endfor %}
+{% endblock %}
