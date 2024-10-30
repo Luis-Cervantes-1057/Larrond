@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestion Empelados{% endblock %}
+
+{% block  cuerpo %}
+    <h1>Gestionar Empleados Ernesto Larrondo</h1>
+
+    {% for m in lasventas %}
+    <li> {{m.id_venta}} --- {{m.id_producto}} --- {{m.cliente}} --- {{m.cantidad}} --- {{m.precio}} --- {{m.gramos}}--- {{m.servicios}} --- {{m.id_empleado}}</li>
+    {% endfor %}
+{% endblock %}
