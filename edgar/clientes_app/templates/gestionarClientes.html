@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestion de Clientes{% endblock %}
+
+{% block  cuerpo %}
+    <h1>Gestionar Clientes Edgar Axel Garcia Aguirre</h1>
+
+    {% for m in losclientes %}
+    <li> {{m.id_clientes}} --- {{m.nombre}} --- {{m.apellido}} --- {{m.direccion}} --- {{m.telefono}}</li>
+    {% endfor %}
+{% endblock %}
