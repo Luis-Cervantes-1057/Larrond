@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestion Proveedores{% endblock %}
+
+{% block  cuerpo %}
+    <h1>Gestionar Proveedores Melanie Vega Renteria</h1>
+
+    {% for m in losprov %}
+    <li> {{m.id_proveedor}} --- {{m.nombre}} --- {{m.direccion}} --- {{m.telefono}} --- {{m.c_electronico}} --- {{m.stock}} --- {{m.fecha_ult_entrega}}</li>
+    {% endfor %}
+{% endblock %}
